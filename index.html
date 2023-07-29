@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Calculator</title>
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        .calculator {
+            padding: 10px;
+            border-radius: 1em;
+            height: 400px;
+            width: 430px;
+            margin: auto;
+            margin-top: 60px;
+            background-color: #191b28;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        .display-box {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #dcdbe1;
+            border: solid black 0.5px;
+            color: black;
+            border-radius: 5px;
+            width: 98%;
+            height: 65%;
+        }
+        .button {
+            font-size: medium;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            border: solid black 0.5px;
+            width: 100%;
+            border-radius: 5px;
+            height: 70%;
+            outline: none;
+            cursor:pointer;
+        }
+        .button:active {
+            background: #e5e5e5;
+            -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+            -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+        }
+        .display-box:active {
+            background: #e5e5e5;
+            -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+            -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+        }  
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            -webkit-animation: gradient 15s ease infinite;
+                    animation: gradient 15s ease infinite;
+        }
+        @-webkit-keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+    </style>
+</head>
+
+<body>
+    <table class="calculator"><tbody>
+        <tr>
+            <td colspan="6"><input class="display-box" type="text" id="result" disabled=""></td>
+            <td colspan="1"><input class="button" type="button" value="Clear" onclick="clearScreen()" style="background-color: #fb0066;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="display('7')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="8" onclick="display('8')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="9" onclick="display('9')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="/" onclick="display('/')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="x²" onclick="squar()" style="background-color: #64278f;"></td> 
+            <td><input class="button" type="button" value="|x|" onclick="abs()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="√x" onclick="sqrt()" style="background-color: #64278f;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="display('4')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="5" onclick="display('5')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="6" onclick="display('6')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="*" onclick="display('*')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="x⁻¹" onclick="inv()" style="background-color: #64278f;"></td> 
+            <td><input class="button" type="button" value="x!" onclick="factorialize()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="log" onclick="log()" style="background-color: #64278f;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="display('1')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="2" onclick="display('2')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="3" onclick="display('3')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="-" onclick="display('-')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="(" onclick="display('(')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value=")" onclick="display(')')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="P(n.r)" onclick="display('p')" style="background-color: #fb7900;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="." onclick="display('.')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="0" onclick="display('0')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="mod" onclick="display('%')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="+" onclick="display('+')" style="background-color: #fb7900;"></td>
+            <td colspan="2"><input class="button" type="button" value="=" onclick="calculate()" style="background-color: #fb0066;"></td>
+            <td><input class="button" type="button" value="C(n.r)" onclick="display('c')" style="background-color: #fb7900;"></td>
+        </tr>
+            <td><input class="button" type="button" value="sin" onclick="sin()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="cos" onclick="cos()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="tan" onclick="tan()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="cot" onclick="cot()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="e" onclick="display(Math.E)" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="log₂" onclick="log2()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="a^n" onclick="display(',')" style="background-color: #fb7900;"></td>
+        </tr> 
+        <tr>
+            <td><input class="button" type="button" value="and" onclick="display('&')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="or" onclick="display('|')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="not" onclick="display('!')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="xor" onclick="display('^')" style="background-color: #8f2727;"></td> 
+            <td><input class="button" type="button" value="π" onclick="display(Math.PI)" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="log₁₀" onclick="log10()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="a^n⁻¹" onclick="display(',1/')" style="background-color: #fb7900;"></td>
+            
+        </tr>
+    </tbody></table>
+
+    <script>
+        document.addEventListener('keydown', keyListener);
+        function keyListener(event) {
+            if (event.defaultPrevented) {return;}
+            if ((event.key >= '0' && event.key <= '9') || ['+','(',')','-','*','/','.','%','!','&','|','^',','].includes(event.key)) {
+                document.getElementById('result').value += event.key;
+            }
+            else if (['Delete'].includes(event.key)) {
+                clearScreen();
+            }
+            else if (['Backspace'].includes(event.key)) {
+                let str = document.getElementById('result').value;
+                document.getElementById('result').value = str.slice(0,-1);
+            }
+            else if (['NumpadEnter','Enter'].includes(event.key)) {
+                calculate(document.getElementById('result').value);
+            }
+            else if (['KeyC'].includes(event.code)) {
+                document.getElementById('result').value += 'c';
+            }
+            else if (['KeyP'].includes(event.code)) {
+                document.getElementById('result').value += 'p';
+            }
+        }
+        function clearScreen() {
+            document.getElementById('result').value = '';
+        }
+        function display(value) {
+            document.getElementById('result').value += value;
+        }
+        function calculate(a = document.getElementById('result').value) {
+            if (a.indexOf(',')!=-1) {
+                try {
+                    myArray = a.split(',');
+                    tmp_a = eval(myArray[0]);
+                    tmp_n = eval(myArray[1]);
+                    document.getElementById('result').value = Math.pow(tmp_a, tmp_n);
+                }
+                catch {document.getElementById('result').value = 'Error';}
+            }
+            else if (a.indexOf('p')!=-1) {
+                try {
+                    myArray = a.split('p');
+                    tmp_n = eval(myArray[0]);
+                    tmp_r = eval(myArray[1]);
+                    document.getElementById('result').value = factorialize(tmp_n)/factorialize(tmp_n-tmp_r);
+                }
+                catch {document.getElementById('result').value = 'Error';}
+            }
+            else if (a.indexOf('c')!=-1) {
+                try {
+                    myArray = a.split('c');
+                    tmp_x = eval(myArray[0]);
+                    tmp_y = eval(myArray[1]);
+                    document.getElementById('result').value = factorialize(tmp_x)/factorialize(tmp_x-tmp_y)/factorialize(tmp_y);
+                }
+                catch {document.getElementById('result').value = 'Error';}
+            }
+            else {
+                try {document.getElementById('result').value = eval(a);}
+                catch {document.getElementById('result').value = 'Error';}
+            }
+        }
+        function sqrt(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.sqrt(eval(a));}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function squar(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.pow(eval(a), 2);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function abs(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.abs(eval(a));}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function inv(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = 1/eval(a);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function factorialize(a = document.getElementById('result').value) {
+            try {
+                num = eval(a);
+                if (num===0||num===1)
+                    return 1;
+                for (var i=num-1; i>=1; i--)
+                    num*=i;
+                document.getElementById('result').value = num;
+                return num;
+            }
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function sin(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.sin(eval(a)*Math.PI/180);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function cos(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.cos(eval(a)*Math.PI/180);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function tan(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.tan(eval(a)*Math.PI/180);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function cot(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = 1/Math.tan(eval(a)*Math.PI/180);}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function log(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.log(eval(a));}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function log2(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.log2(eval(a));}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+        function log10(a = document.getElementById('result').value) {
+            try {document.getElementById('result').value = Math.log10(eval(a));}
+            catch {document.getElementById('result').value = 'Error';}
+        }
+    </script>
+</body>
+</html>
